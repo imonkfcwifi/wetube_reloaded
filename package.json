@@ -1,0 +1,30 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "video cafe!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imonkfcwifi/wetube_reloaded.git"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [
+    "youtube"
+  ],
+  "author": "imonkfcwifi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imonkfcwifi/wetube_reloaded/issues"
+  },
+  "homepage": "https://github.com/imonkfcwifi/wetube_reloaded#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "nodemon": "^2.0.20"
+  }
+}
