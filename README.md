@@ -3,16 +3,16 @@
 <!-- global router -->
 / -> Home
 /join -> 회원가입
-/login
+/login -> login
 /search -> search
 
-<!-- user router -->
-/users/edit
-/users/delete
+<!-- user router -->    
+/users/edit -> user information edit
+/users/delete -> user account delete
 
 <!-- videos router -->
-/videos/watch
-/videos/edit
-/videos/delete
-/videos/comments
-/videos/comments/delete
+/videos/watch -> play the video
+/videos/edit -> edit the video 
+/videos/delete -> delete the video
+/videos/comments -> comments on video
+/videos/comments/delete -> delete comments on video
