@@ -7,16 +7,21 @@
 /search -> search
 
 <!-- user router -->    
-/users/edit -> user information edit
-/users/delete -> user account delete
+
+/users/:id -> See (me or others) user's profile
+/users/logout
+/users/edit -> own user information edit
+/users/delete -> own user account delete
 
 <!-- videos router -->
-/videos/watch -> play the video
-/videos/edit -> edit the video 
-/videos/delete -> delete the video
+/videos/:id -> play the video
+/videos/:id/edit -> only the creater edit the video 
+/videos/:id/upload -> only the creater Upload videos
 /videos/comments -> comments on video
+/videos/delete -> delete the video
 /videos/comments/delete -> delete comments on video
 
 <!-- ./ current folder
 ../ get out ma folder
 / enter the folder -->
+
