@@ -16,3 +16,7 @@
 /videos/delete -> delete the video
 /videos/comments -> comments on video
 /videos/comments/delete -> delete comments on video
+
+<!-- ./ current folder
+../ get out ma folder
+/ enter the folder -->
