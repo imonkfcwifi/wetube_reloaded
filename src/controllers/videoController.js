@@ -1,13 +1,7 @@
-export const homepageVideos = (req, res) => res.render("home");
+export const homepageVideos = (req, res) => res.render("home", { pageTitle: "home" });
 
-export const watch = (req, res) => {
-
-    return res.send(`video number #${req.params.id}`);
-}
-export const edit = (req, res) => {
-    console.log(req.params);
-    return res.send("Edit");
-}
+export const watch = (req, res) => res.render("watch", { pageTitle: "videos" });
+export const edit = (req, res) => res.render("edit", { pageTitle: "Edit Videos" });
 
 export const deleteVideo = (req, res) => {
     console.log(req.params);

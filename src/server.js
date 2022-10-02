@@ -9,6 +9,7 @@ const app = express();
 const morganMiddleware = morgan("dev");
 
 app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
 app.use(morganMiddleware);
 app.use("/", globalRouter);
 app.use("/users", userRouter);
