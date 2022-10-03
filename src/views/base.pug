@@ -6,19 +6,8 @@ html(lang=ko)
         link(rel="stylesheet" href="https://unpkg.com/mvp.css@1.11/mvp.css")
     body
         header 
-            if fakerUser.loggedIn
-                small Hello #{fakerUser.username}
             h1=pageTitle
-                nav     
-                    ul  
-                        if fakerUser.loggedIn
-                            li 
-                               a(href="/Logout") Log out
 
-                        else
-                            li 
-                                a(href="/Login") Login
-                            
         main 
         block content 
-include partials/footer.pug
+include partials/footer
