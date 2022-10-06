@@ -33,14 +33,15 @@ export const watch = (req, res) => {
     const { id } = req.params;
     const video = videos[id - 1]
     // const id = req.params.id 와 같음.
-    return res.render("watch", { pageTitle: `Watch ${video.title}`, video });
+    return res.render("watch", { pageTitle: `Watch : ${video.title}`, video });
 }
-export const edit = (req, res) => res.render("edit", { pageTitle: "Edit Videos" });
+export const getEdit = (req, res) => {
+    const { id } = req.params;
+    const video = videos[id - 1]
+    return res.render("edit", { pageTitle: `Edit : ${video.title}`, video });
+}
 
-export const deleteVideo = (req, res) => {
-    console.log(req.params);
-    return res.send("delete!");
-}
+
+
+export const postEdit = (req, res) => { }
 //  use ` => ` without ` { } ` you get an automatic `return`
-export const search = (req, res) => res.send("search!");
-export const upload = (req, res) => res.send("upload!");
